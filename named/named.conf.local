@@ -1,0 +1,9 @@
+zone "openshift4.kflowtech.com" {
+    type master;
+    file "/etc/named/zones/db.openshift4.kflowtech.com"; # zone file path
+};
+
+zone "1.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/named/zones/1.168.192.in-addr.arpa";  # 192.168.1.0/24 subnet
+};

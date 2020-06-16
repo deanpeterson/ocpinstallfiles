@@ -1,0 +1,24 @@
+$TTL    604800
+@       IN      SOA     webservice.openshift4.kflowtech.com. admin.openshift4.kflowtech.com. (
+                  6     ; Serial
+             604800     ; Refresh
+              86400     ; Retry
+            2419200     ; Expire
+             604800     ; Negative Cache TTL
+)
+
+; name servers - NS records
+    IN      NS      webservice.openshift4.kflowtech.com.
+
+; name servers - PTR records
+51    IN    PTR    webservice.openshift4.kflowtech.com.
+
+; OpenShift Container Platform Cluster - PTR records
+201    IN    PTR    master1.openshift4.kflowtech.com.
+202    IN    PTR    master2.openshift4.kflowtech.com.
+203    IN    PTR    master3.openshift4.kflowtech.com.
+204    IN    PTR    worker1.openshift4.kflowtech.com.
+205    IN    PTR    worker2.openshift4.kflowtech.com.
+206    IN    PTR    bootstrap.openshift4.kflowtech.com.
+211    IN    PTR    api.openshift4.kflowtech.com.
+211    IN    PTR    api-int.openshift4.kflowtech.com.
